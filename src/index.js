@@ -14,14 +14,14 @@ submit.addEventListener("click", function(e) {
       return true;
     } 
   };
-  const doubleNumber = reverseList.map(function(number) {
-    if (isEven(reverseList.indexOf(number)) === true) {
-      return number * 2;
-    } else {
+  const doubleNumber = reverseList.map(function(number, index) {
+    if (isEven(index) === true) {
       return number;
+    } else {
+      return number * 2;
     }
   });
-  console.log("list ao contrario em dobro", doubleNumber);
+console.log("lista ao contrário dobrada " + doubleNumber);
 });
 
 console.log(validator);
