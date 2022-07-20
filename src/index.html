@@ -9,11 +9,6 @@
     <header>
       <div class="container">
         <div class="marca">iCake</div>
-        <div class="links">
-          <a href="#"><img src="https://i2.wp.com/www.multarte.com.br/wp-content/uploads/2019/03/logo-instagram-png-fundo-transparente13.png?fit=696%2C696&ssl=1" alt="instagram logo"></a>
-          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp logo"></a>
-          <a href="#"><img src="https://www.freepnglogos.com/uploads/logo-telefone-png/logo-telefone-png-vetores-fotos-baixar-gratis-11.png" alt="telefone logo"></a>
-        </div>
       </div>
     </header>
     <main>
@@ -21,13 +16,28 @@
         <h1>Para finalizar a compra, precisamos validar o seu cartão</h1>
         <form id="formulario">
           <label for="input-card-number">Digite o número do seu cartão</label>
-          <input type="text" name="input-card-number-group" id="input-card-number" maxlength="16" placeholder="**** **** **** ****">
+          <input type="text" name="input-card-number-group" id="input-card-number" maxlength="16" placeholder="**** **** **** ****" pattern="[0-9]+">
           <input type="submit" value="Validar" id="send">
         </form>
       </div>
-      
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container-footer">
+        <div class="help-bar">
+          <a href="#">Ajuda</a>
+          <a href="#">Sobre a empresa</a>
+          <a href="#">Produtos</a>
+          <a href="#">Fale conosco</a>
+        </div>
+        <div class="social-media">
+          <div class="contato">Contato</div>
+          <div class="links">
+            <a href="#"><img src="https://i2.wp.com/www.multarte.com.br/wp-content/uploads/2019/03/logo-instagram-png-fundo-transparente13.png?fit=696%2C696&ssl=1" alt="instagram logo"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp logo"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
