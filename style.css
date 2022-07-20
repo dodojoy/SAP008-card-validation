@@ -15,27 +15,15 @@ header {
 
 .container {
   width: 80%;
-  color: #756F6F;
+  color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   font-size: 30px;
 }
 
-.container .links a {
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.container .links img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-}
-
 main {
-  height: 100vh;
+  height: 85vh;
 }
 
 .card {
@@ -50,18 +38,20 @@ h1 {
 }
 
 form {
-  width: 250px;
+  max-width: 300px;
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   margin-top: 30px;
+  padding: 0 30px;
   border-radius: 20px;
+  box-shadow: 0 0 1em #c7c8ca3b;
 }
 
 input[type="text"], input[type="submit"] {
-  width: 70%;
+  width: 80%;
 }
 
 label {
@@ -76,11 +66,11 @@ input[type="text"] {
   outline: none;
   border-radius: 5px;
   margin-top: 55px;
-  background-color:#756f6f56
+  background-color:#756f6f56;
 }
 
 #input-card-number::placeholder {
-  font-size: 20px;
+  padding-left: 10px;
 }
 
 input[type="submit"] {
@@ -94,7 +84,52 @@ input[type="submit"] {
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: 200px;
   background-color: #F93A3A;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer .container-footer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .help-bar{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .help-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contato {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: row;
+}
+
+footer img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin: 5px;
 }
