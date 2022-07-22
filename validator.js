@@ -17,7 +17,6 @@ const validator = {
         return number * 2;
       }
     });
-    console.log(doubleNumber);
     const doubleNumberSum = doubleNumber.map(function (number, index) {
       if (number > 9) {
         return number - 9;
@@ -25,7 +24,6 @@ const validator = {
         return number;
       }
     });
-    console.log(doubleNumberSum);
     const reducer = (accumulator, curr) => accumulator + curr; 
     const sum = doubleNumberSum.reduce(reducer) % 10 === 0;
     return sum;
