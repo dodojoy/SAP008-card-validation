@@ -4,6 +4,14 @@ submit.addEventListener("click", function(e) {
   e.preventDefault();
   const number = document.querySelector("#input-card-number");
   const value = number.value;
-  console.log(validator.cardValidator(value));
-  console.log(validator.maskify(value));
+  const numberValue = Number(value);
+  if (value === ""){
+    alert("Campo vazio")
+  } else if (isNaN(numberValue)) {
+    alert("Digite somente números")
+  } else if (!validator.cardValidator(value)) {
+    alert("Cartão inválido")
+  } else {
+    alert("Cartão " + validator.maskify(value) + " validado")
+  }
 });
