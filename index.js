@@ -9,7 +9,7 @@ submit.addEventListener("click", function(e) {
     alert("Campo vazio")
   } else if (isNaN(numberValue)) {
     alert("Digite somente números")
-  } else if (!validator.cardValidator(value)) {
+  } else if (!validator.isValid(value)) {
     alert("Cartão inválido")
   } else {
     alert("Cartão " + validator.maskify(value) + " validado")

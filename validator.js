@@ -1,5 +1,5 @@
 const validator = {
-  cardValidator: function (value) {
+  isValid: function (value) {
     const listValue = value.split("");
     const numberListValue = listValue.map(function (number) {
       return parseInt(number);
@@ -17,7 +17,7 @@ const validator = {
         return number * 2;
       }
     });
-    const doubleNumberSum = doubleNumber.map(function (number, index) {
+    const doubleNumberSum = doubleNumber.map(function (number) {
       if (number > 9) {
         return number - 9;
       } else {
