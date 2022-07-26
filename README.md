@@ -11,7 +11,9 @@ Na início da construção do protótipo, eu utilizei papel e caneta para desenh
 Contudo, pelo papel eu não consegui expressar como eu gostaria que ficasse o design do site. Então, em seguida, eu utilizei a plataforma Figma que me possibilitou dar formas e cores exatas ao meu projeto. Tendo como resultado o seguinte protótipo:
 
 * main
+
 <img src="https://i.imgur.com/TiUj062.png" width= 800px height= 400px>
 
 * footer
+
 <img src="https://i.imgur.com/BK2G0LE.png" width= 800px height= 400px>
